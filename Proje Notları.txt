@@ -1,0 +1,53 @@
+os: işletim sistemlerini yönetmemiz için gerekli olan fonksiyonlar yer alıyor.
+matplot.pyplot: verilerimizi görselleştirmemizde grafik oluşturmamıza yarayan grafik kütüphanesidir.
+                Bunlarla grafik çizebiliriz. X ve Y eksenlerinin koordinatlarını öğrenmemize yarar.
+cv2: fotoğrafları piksel piksel incelemmize yarar.
+
+
+1- Plakalar dikdörtgen yapıya sahiptir.
+2- 	--> height: yükseklik
+	--> width:  genişlik
+   height ile width arasında genel olarak bütün plakalar için konuşacak olursak 2 kat fark vardır.
+   Bu yüzden h:x oranı 2 kat olarak belirleyebiliriz.
+3- Resimlerin arka planı beyaz, gri arasında değişmektedir.
+   Gri formata dönüştürdüğümüz zaman 85'in üstünde 200'in altında bir değer olduğunu görmekteyiz.
+4- Butun resimlerin boyutunu 500x500 yaptığımızda bütün plakaların boyutunu öğrenerek bir fikir elde etmiş oluruz.
+   500x500 yaptığımızda genel olarak plakaların boyutları yükseklik değeri 50'nin altında genişlil değeri ise 150'nin altında oluyor.
+5- 3, 4, 5, ... a, b, c, gibi karakterler ile plakaları okuyabiliriz.
+
+
+1- Dikdörtgenleri tespit et.
+2- h, w oranı 2 olarak belirledik.
+3- Arka plan rengi 85<x<200 piksel olan resimleri içinden seçerek almayı hedefledik.
+4- Boyut sınırlaması 50(yükseklik) 150(genişlik) olarak belirledik.
+5- İşin sonunda [x, y, w, h] dizisini elde etmiş olacağız.
+   x ve y değeri sol üst köşenin koordinatlarıdır yani plakanın başlangıç noktası. Duruma göre merkez koordinatları da temsil edebilmektedir.
+
+gürültü engellememiz lazım yani plakanın etrafındaki kenarlıkları yok edip yalnızca plakaya odaklanmamız lazım.
+plakaların kenarlıkları yani siyah çerçevesi 5px civarında gezinmektedir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
